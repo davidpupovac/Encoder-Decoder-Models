@@ -749,7 +749,5 @@ history = model.fit(X, y, epochs=100, validation_split=0.2, verbose=1, batch_siz
 # Option 2 to fit the model
 for epoch in range(5):
 	# fit model for one epoch on this sequence
-	model.fit(X1, y, epochs=1, batch_size=50, verbose=2, validation_split=0.2, shuffle=False)
-	model.reset_states()
-
-    
+	model.fit(X, y, epochs=1, batch_size=10, verbose=2, validation_split=0.2, shuffle=False)
+	model.reset_states()  
