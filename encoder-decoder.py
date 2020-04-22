@@ -1,5 +1,5 @@
-# Python version: 2.1 
-# Tensorflow-gpu version: 1.14.0
+# Python version: 3.7.3
+# Tensorflow-gpu version: 2.1
 # Keras version: 2.2.4-tf
 
 # ----------------------------------------------------------------------------------------
