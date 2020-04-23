@@ -676,6 +676,21 @@ plot_model(model, to_file='~Desktop\\model.png', show_shapes=True)
 
 history = model.fit(X, y, epochs=5, validation_split=0.2, verbose=1, batch_size=32)
 
+# -----------------------------------------------------------------------------
+# train 2  Bidirectional
+
+from keras.layers import Bidirectional
+
+model = Sequential()
+model.add(Bidirectional(LSTM(100, activation='relu', input_shape=(n_steps_in, k_features))))
+model.add(RepeatVector(n_steps_out))
+model.add(Bidirectional(LSTM(100, activation='relu', return_sequences=True)))
+model.add(TimeDistributed(Dense(1)))
+model.add(TimeDistributed(Dense(k_features, activation='softmax')))
+
+model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+
+history = model.fit(X, y, epochs=5, validation_split=0.2, verbose=1, batch_size=32)
 
 # =============================================================================
 # =============================================================================
