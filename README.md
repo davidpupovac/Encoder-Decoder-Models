@@ -7,15 +7,24 @@
 
 The file provide several alternative ways of specifying encoder-decoder model using Keras and Tensorflow. The examples include:  
 
-- Teacher forcing approach - general example (LSTM and GRU)
-- Teacher forcing approach - translation example with embedding layer
-- Encoder-decoder models using seq2seq addon
-- Encoder-decoder models without teacher forcing (based on RepeatVector)
-- Stateful encoder-decoder model (based on RepeatVector)
-
+#### [Teacher forcing approach - general example](https://github.com/davidpupovac/Encoder-Decoder-Models/blob/master/encoder-decoder_1.py)
+- Long Short-Term Memory (LSTM) 
+- Gated Recurrent Unit (GRU) (LSTM and GRU)
+#### [Teacher forcing approach - encoder-decoder models using seq2seq addon](https://github.com/davidpupovac/Encoder-Decoder-Models/blob/master/encoder-decoder_2.py)
+- Long Short-Term Memory (LSTM) 
+#### [Teacher forcing approach - translation example with embedding layer](https://github.com/davidpupovac/Encoder-Decoder-Models/blob/master/encoder-decoder_3.py)
+- Long Short-Term Memory (LSTM) 
+#### [Encoder-decoder models without teacher forcing (based on RepeatVector)](https://github.com/davidpupovac/Encoder-Decoder-Models/blob/master/encoder-decoder_4.py)
+- Long Short-Term Memory (LSTM)
+- Bidirectional (LSTM)
+- Functional api with short (state_h) or long term (state_c) state passed to RepeatVector
+#### [Stateful encoder-decoder model (based on RepeatVector)](https://github.com/davidpupovac/Encoder-Decoder-Models/blob/master/encoder-decoder_5.py)
+- Long Short-Term Memory (LSTM)
 
 ## References:
 
 - https://blog.keras.io/a-ten-minute-introduction-to-sequence-to-sequence-learning-in-keras.html
+- https://www.tensorflow.org/tutorials/text/nmt_with_attention
 - https://machinelearningmastery.com/develop-encoder-decoder-model-sequence-sequence-prediction-keras/
 - https://machinetalk.org/2019/03/29/neural-machine-translation-with-attention-mechanism/
+
