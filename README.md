@@ -9,6 +9,7 @@ The file provide several alternative ways of specifying encoder-decoder model us
 
 - Teacher forcing approach - general example (LSTM and GRU)
 - Teacher forcing approach - translation example with embedding layer
+- Encoder-decoder models using seq2seq addon
 - Encoder-decoder models without teacher forcing (based on RepeatVector)
 - Stateful encoder-decoder model (based on RepeatVector)
 
