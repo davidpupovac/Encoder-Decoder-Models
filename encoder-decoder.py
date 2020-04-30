@@ -780,32 +780,7 @@ model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accur
 history = model.fit(X, y, epochs=5, validation_split=0.2, verbose=1, batch_size=32)
 
 # =============================================================================
-# train 3  Stateful
-
-# (this model will not work well on this data)
-
-from keras.models import Sequential
-from keras.layers import RepeatVector, TimeDistributed, LSTM, Dense
-
-batch_size = 100 
-
-model = Sequential()
-model.add(LSTM(50, activation='relu', 
-               batch_input_shape=[batch_size, n_steps_in, k_features], return_sequences=True))
-model.add(RepeatVector(n_steps_out)) 
-model.add(LSTM(50, activation='relu', return_sequences=True, stateful=True)) 
-model.add(TimeDistributed(Dense(k_features, activation='softmax')))
-
-model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
-print(model.summary())
-
-for epoch in range(5):
-	model.fit(X, y, epochs=1, batch_size=100, verbose=1,
-                    validation_split=0.2, shuffle=False)
-	model.reset_states()
-
-# =============================================================================
-# train 4  
+# train 3
 
 # functional  api with short term (state_h) or long term (state_c) state passed to RepeatVector 
 
@@ -880,7 +855,7 @@ n_steps_out= n_steps_in-2
 y = X[:,0:n_steps_out, ]
 
 # =============================================================================
-# train 1 - stateful, categorical
+# train 1 - stateful
 
 batch_size= 10 # be sure that number of samples that can be divided by the batch size.
 
