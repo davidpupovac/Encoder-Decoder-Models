@@ -5,14 +5,15 @@
 
 # Encoder-Decoder-models
 
-The file provide several alternative ways of specifying encoder-decoder model using Keras and Tensorflow. The examples include:  
+The file provide several alternative ways of specifying encoder-decoder model, typically used for neural machine translation (NMT), using Keras and Tensorflow. 
+The examples include:  
 
 #### [Teacher forcing approach - general example](https://github.com/davidpupovac/Encoder-Decoder-Models/blob/master/encoder-decoder_1.py)
 - Long Short-Term Memory (LSTM) 
 - Gated Recurrent Unit (GRU) (LSTM and GRU)
 #### [Teacher forcing approach - encoder-decoder models using seq2seq addon](https://github.com/davidpupovac/Encoder-Decoder-Models/blob/master/encoder-decoder_2.py)
 - Long Short-Term Memory (LSTM) 
-#### [Teacher forcing approach - translation example with embedding layer](https://github.com/davidpupovac/Encoder-Decoder-Models/blob/master/encoder-decoder_3.py)
+#### [Teacher forcing approach - short translation example using embedding layer](https://github.com/davidpupovac/Encoder-Decoder-Models/blob/master/encoder-decoder_3.py)
 - Long Short-Term Memory (LSTM) 
 #### [Encoder-decoder models without teacher forcing (based on RepeatVector)](https://github.com/davidpupovac/Encoder-Decoder-Models/blob/master/encoder-decoder_4.py)
 - Long Short-Term Memory (LSTM)
