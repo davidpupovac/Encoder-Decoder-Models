@@ -3,7 +3,7 @@
 [![dep2](https://img.shields.io/badge/Keras-2.2.4-brightgreen.svg)](https://keras.io/)
 
 
-# Encoder-Decoder-Models
+# Encoder Decoder Models
 
 The file provide several alternative ways of specifying encoder-decoder model, typically used for neural machine translation (NMT), using Keras and Tensorflow. 
 The examples include:  
