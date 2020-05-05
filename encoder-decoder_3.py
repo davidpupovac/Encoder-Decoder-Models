@@ -20,7 +20,7 @@
 #                            Teacher forcing 
 
 
-#             Ttranslation example with embedding layer
+#                Translation example with embedding layer
 
 # =============================================================================
 # =============================================================================
@@ -31,10 +31,10 @@ import unicodedata
 import re
 
 # -----
-# you got message:
-# Fail to find the dnn implementation 
-# when running:  encoder_output, en_state_h, en_state_c = encoder(source_input, initial_state)
+# If you run the following code and get error 
+# UnknownError: Fail to find the dnn implementation. [Op:CudnnRNN]
 # first run the following:
+
 gpus = tf.config.experimental.list_physical_devices('GPU')
 for gpu in gpus:
         tf.config.experimental.set_memory_growth(gpu, True)
