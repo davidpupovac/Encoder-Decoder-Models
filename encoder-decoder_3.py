@@ -176,7 +176,7 @@ class Decoder(tf.keras.Model):
         return logits, state_h, state_c
 
 # -----
-# model basics
+# Model basics
 
 EMBEDDING_SIZE = 32
 LSTM_SIZE = 64
@@ -189,6 +189,7 @@ decoder = Decoder(fr_vocab_size, EMBEDDING_SIZE, LSTM_SIZE) # define output of d
 
 # -----
 # Checks
+
 source_input = tf.constant([[1, 3, 5, 7, 2, 0, 0, 0]]) # fake input sequence with some zero padding
 initial_state = encoder.init_states(1) # initial states of zeros
 encoder_output, en_state_h, en_state_c = encoder(source_input, initial_state)
@@ -222,6 +223,7 @@ def loss_func(targets, logits):
 
 # -----
 # Define optimizer
+
 optimizer = tf.keras.optimizers.Adam()
 
 # -----
@@ -291,7 +293,7 @@ for e in range(NUM_EPOCHS):
       continue
 
 # -----
-# predict 
+# Predict 
 
 # For demonstration  purposes select a random sentence from training data set
 test_source_text = raw_data_en[np.random.choice(len(raw_data_en))]
