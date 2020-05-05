@@ -10,7 +10,7 @@ The examples include:
 
 #### [Teacher forcing approach - general example (without embedding layer)](https://github.com/davidpupovac/Encoder-Decoder-Models/blob/master/encoder-decoder_1.py)
 - Long Short-Term Memory (LSTM) 
-- Gated Recurrent Unit (GRU) (LSTM and GRU)
+- Gated Recurrent Unit (GRU) 
 #### [Teacher forcing approach - encoder-decoder models using seq2seq addon (with embedding layer)](https://github.com/davidpupovac/Encoder-Decoder-Models/blob/master/encoder-decoder_2.py)
 - Long Short-Term Memory (LSTM) 
 #### [Teacher forcing approach - short translation example (with embedding layer)](https://github.com/davidpupovac/Encoder-Decoder-Models/blob/master/encoder-decoder_3.py)
